@@ -13,5 +13,4 @@ int main() {
 	
 	sim::world* mainWorld = new sim::world(200, 50, 0, 10);
 	std::cout << mainWorld->toString() << std::endl;
-
 }
