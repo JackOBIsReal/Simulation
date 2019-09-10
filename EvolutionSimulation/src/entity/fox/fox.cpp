@@ -1,8 +1,15 @@
 #include "pch.h"
+#include "core.h"
 #include "fox.h"
 
 namespace sim {
-	void fox::m_eat(entity other)
+	//initializes the fox with every needed variable
+	fox::fox(glm::vec2 Position) {
+
+	}
+
+	//the function teaching the fox how to eat
+	void fox::m_eat(entity* other)
 	{
 	}
 }

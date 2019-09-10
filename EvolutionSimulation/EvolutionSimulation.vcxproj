@@ -154,6 +154,7 @@
     <ClCompile Include="src\entity\entity.cpp" />
     <ClCompile Include="src\entity\fox\fox.cpp" />
     <ClCompile Include="src\entity\plant\plant.cpp" />
+    <ClCompile Include="src\entity\rabbit\rabbit.cpp" />
     <ClCompile Include="src\entity\world\world.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp">

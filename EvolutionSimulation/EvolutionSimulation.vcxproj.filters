@@ -31,5 +31,6 @@
     <ClCompile Include="src\entity\plant\plant.cpp" />
     <ClCompile Include="src\entity\world\world.cpp" />
     <ClCompile Include="src\core.cpp" />
+    <ClCompile Include="src\entity\rabbit\rabbit.cpp" />
   </ItemGroup>
 </Project>

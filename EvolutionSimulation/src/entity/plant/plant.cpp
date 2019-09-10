@@ -8,36 +8,32 @@
 namespace sim {
 	void plant::grow(std::vector<std::pair<plant*,int>>& plants)
 	{
-		std::vector<int> toRemove(0);
+		//iteratin through the plants
 		for (int i = 0; i < plants.size(); i++) {
 			if (plants[i].second == 0)
+				//the fully grown plants are positioned randomly and ready to be eaten
 				plants[i].first->m_moveRandom();
 			else
+				//the plants grow by one round
 				plants[i].second -= 1;
 		}
 	}
-	plant::plant(glm::vec2 Position)
+	plant::plant(glm::vec2 Position) :entity(PLANT, Position)
 	{
+		//innitialize the plant with every variable, including the parent constructor
 		m_position = Position;
 		m_type = PLANT;
 		m_eaten = false;
 	}
-	plant::plant()
+	void plant::m_recycle()
 	{
+		//moves the Plant to a random position and makes it eatable
 		m_position = glm::vec2(random() * 100.0f, random() * 100.0f);
-		m_type = PLANT;
 		m_eaten = false;
-	}
-	plant::~plant()
-	{
-	}
-	void plant::m_moveRandom()
-	{
-		m_eaten = false;
-		m_position = glm::vec2(random() * 100.0f, random() * 100.0f);
 	}
 	const std::string plant::toString() const
 	{
+		//creates a string with the information of the plant for console debugging
 		std::stringstream ss;
 		ss << "X: " << m_position.x << ", y: " << m_position.y << ", eaten: ";
 		if (m_eaten)
