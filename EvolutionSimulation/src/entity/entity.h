@@ -29,6 +29,7 @@ namespace sim {
 		virtual void m_moveRandom();
 		//moves the entity with it's full speed to a set direction
 		virtual void m_move(float Direction);
+		//the "intelligenze" of the entity, deciding where to go or 
 
 		//mutates the traits with a standart deviation from the average of the parents traits
 		virtual void m_mutate(std::map<std::string, float> Parent1, std::map<std::string, float> Parent2);
@@ -45,6 +46,7 @@ namespace sim {
 		//get the type of the entity
 		inline const entityType m_GetType() const { return m_type; }
 
+		//returns a string containing the entitys information for deebug purposes
 		virtual const std::string toString() const { return ""; };
 
 	public:
