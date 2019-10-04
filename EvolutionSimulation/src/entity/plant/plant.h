@@ -9,7 +9,7 @@ namespace sim {
 		
 		//initializes the plant in the given location
 		//random location if none is given
-		plant(glm::vec2 Position = glm::vec2(random() * 100.0f, random() * 100.0f));
+		plant(glm::vec2 Position = glm::vec2(engine::random() * 100.0f, engine::random() * 100.0f));
 
 		//position the plant randomly and make it edible
 		void m_recycle();

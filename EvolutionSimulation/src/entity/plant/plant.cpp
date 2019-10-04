@@ -28,7 +28,7 @@ namespace sim {
 	void plant::m_recycle()
 	{
 		//moves the Plant to a random position and makes it eatable
-		m_position = glm::vec2(random() * 100.0f, random() * 100.0f);
+		m_position = glm::vec2(engine::random() * 100.0f, engine::random() * 100.0f);
 		m_eaten = false;
 	}
 	const std::string plant::toString() const

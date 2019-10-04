@@ -7,6 +7,15 @@
     <Filter Include="entity\fox">
       <UniqueIdentifier>{3E950893-2A4D-4AE0-9354-233C7F2BE5D0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="entity\plant">
+      <UniqueIdentifier>{70D93578-5C3C-C51C-05C2-FDD2F103919F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\rabbit">
+      <UniqueIdentifier>{85A3D482-F163-50B9-BA9E-9936261E9595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="entity\world">
+      <UniqueIdentifier>{1972B678-05D5-451D-AE5A-7ED39A9C11A0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\core.h" />
@@ -16,21 +25,36 @@
     <ClInclude Include="src\entity\fox\fox.h">
       <Filter>entity\fox</Filter>
     </ClInclude>
+    <ClInclude Include="src\entity\plant\plant.h">
+      <Filter>entity\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entity\rabbit\rabbit.h">
+      <Filter>entity\rabbit</Filter>
+    </ClInclude>
+    <ClInclude Include="src\entity\world\world.h">
+      <Filter>entity\world</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h" />
     <ClInclude Include="src\pch.h" />
-    <ClInclude Include="src\entity\rabbit\rabbit.h" />
-    <ClInclude Include="src\entity\plant\plant.h" />
-    <ClInclude Include="src\entity\world\world.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\core.cpp" />
+    <ClCompile Include="src\entity\entity.cpp">
+      <Filter>entity</Filter>
+    </ClCompile>
     <ClCompile Include="src\entity\fox\fox.cpp">
       <Filter>entity\fox</Filter>
     </ClCompile>
+    <ClCompile Include="src\entity\plant\plant.cpp">
+      <Filter>entity\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\rabbit\rabbit.cpp">
+      <Filter>entity\rabbit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\entity\world\world.cpp">
+      <Filter>entity\world</Filter>
+    </ClCompile>
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\pch.cpp" />
-    <ClCompile Include="src\entity\entity.cpp" />
-    <ClCompile Include="src\entity\plant\plant.cpp" />
-    <ClCompile Include="src\entity\world\world.cpp" />
-    <ClCompile Include="src\core.cpp" />
-    <ClCompile Include="src\entity\rabbit\rabbit.cpp" />
   </ItemGroup>
 </Project>

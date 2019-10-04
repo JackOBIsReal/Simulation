@@ -5,6 +5,7 @@
 #include <algorithm>
 #include <utility>
 #include <string>
+#include <string.h>
 #include <cstdlib>
 #include <sstream>
 #include <map>
@@ -12,7 +13,12 @@
 #include <chrono>
 #include <ctime>
 #include <cmath>
+#include <array>
+#include <thread>
+#include <mutex>>
+
+//includes the engine
 
 //includes the important glm functions for vector calculations
-#include <glm.hpp>
-#include <gtx/rotate_vector.hpp>
+#include "glm.h"
+#include "gtx/rotate_vector.hpp"

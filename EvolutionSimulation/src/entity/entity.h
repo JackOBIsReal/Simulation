@@ -7,11 +7,11 @@
 #define STANDART_ENERGY_EFFICIANCE 1.0f
 
 namespace sim {
-	enum traits { 
-		placeholder_trait,
-		SPEED, 
-		SENSITIVITY, 
-		MAX_ENERGY, ENERGY_PER_MEAL, ENERGY_EFFICIENCY
+	enum traits {
+		SPEED,
+		SENSITIVITY,
+		MAX_ENERGY, ENERGY_PER_MEAL, ENERGY_EFFICIENCY,
+		number_of_traits
 	};
 
 	enum entityType {

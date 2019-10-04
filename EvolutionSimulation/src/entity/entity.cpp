@@ -28,7 +28,7 @@ namespace sim {
 		//rotates it by a random angle
 		glm::vec2 movement(m_traits[SPEED], 0);
 
-		glm::rotate(movement, random() * 360);
+		glm::rotate(movement, engine::random() * 360);
 
 		m_position += movement;
 

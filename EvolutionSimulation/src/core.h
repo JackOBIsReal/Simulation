@@ -1,6 +1,6 @@
 #pragma once
 
-namespace sim {
+namespace engine {
 	//mersenne twister engine for randomization
 	extern std::mt19937 randomNumber;
 

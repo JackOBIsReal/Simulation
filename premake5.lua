@@ -21,6 +21,8 @@ project "EvolutionSimulation"
 	pchheader "pch.h"
 	pchsource "EvolutionSimulation/src/pch.cpp"
 
+	
+
 	files
 	{
 		"%{prj.name}/src/**.h"	,
@@ -30,7 +32,8 @@ project "EvolutionSimulation"
 	includedirs
 	{
 		"EvolutionSimulation/src/",
-		"EvolutionSimulation/vendor/GLM/"
+		"EvolutionSimulation/vendor/GLM/",
+		"../Engine/Engine/src"
 	}
 
 	flags
@@ -49,17 +52,23 @@ project "EvolutionSimulation"
 
 	filter "configurations:Debug"
 		defines "ENGINE_DEBUG"
-		symbols "On"
-		buildoptions "/MDd"
+		symbols "On"links
+		{
+			"../Engine/bin/Debug-windows-x86_64/Engine/Engine.lib"
+		}
 
 	filter "configurations:Release"
 		defines "ENGINE_RELEASE"
-		optimize "On"
-		buildoptions "/MD"
+		optimize "On"links
+		{
+			"../Engine/bin/Release-windows-x86_64/Engine/Engine.lib"
+		}
 
 	filter "configurations:Dist"
 		defines "ENGINE_DIST"
-		optimize "On"
-		buildoptions "/MD"
+		optimize "On"links
+		{
+			"../Engine/bin/Dist-windows-x86_64/Engine/Engine.lib"
+		}
 		
 IncludeDir = {}
